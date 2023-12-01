@@ -1,0 +1,44 @@
+nav {
+    background-color: rgba(78, 96, 83,90%);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    font-size: 20px;
+}
+#logocontainer img {
+    height: 45px;
+    width: 51px;
+}
+#logocontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    li {
+      display: none;
+    }
+  }
+#logocontainer {
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 10px;
+}
+nav a {
+    margin: 10px;
+}
+ul {
+    display: flex;
+}
+li {
+    list-style: none;
+    color: #9C9C9C;
+    
+}

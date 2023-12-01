@@ -1,0 +1,57 @@
+img {
+}
+@keyframes slidehide {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -400px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  #links {
+    animation-name: slidehide;
+    animation-duration: 1s;
+   animation-fill-mode: forwards;
+    
+  }
+}
+
+#links {
+  position: relative;
+  top: -300px;
+}
+.circleLink {
+  width: 130px;
+  height: 130px;
+  border-radius: 70px;
+  box-shadow: 2px 2px 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circleLink:hover {
+  box-shadow: 10px 10px 10px;
+}
+
+#github {
+  position: relative;
+  background-color: #406065;
+  top: 0px;
+  left: 150px;
+}
+#linkedIn {
+  position: relative;
+  background-color: white;
+  top: 200px;
+  left: 50px;
+}
+
+#landing {
+  width: 100%;
+  min-width: 900px;
+  height: 997px;
+  background-position: center;
+  background-image: url("../imgs/Laptop.png");
+  overflow-x: hidden;
+}
