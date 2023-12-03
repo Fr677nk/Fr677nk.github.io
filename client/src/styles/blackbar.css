@@ -1,0 +1,45 @@
+
+#blackbar {
+    height: 429px;
+    background-color: black;
+}
+#blackbar p {
+    margin: 0px;
+}
+
+.sliderp {
+    position: relative;
+    text-align: left;
+    
+    font-size: 36px;
+    transform: translateX(-200px);
+    transition: 0s;
+    opacity: 0;
+    width: 50%;
+}
+.slide1 {
+    color: white;
+    top: 10%;
+    left: 10%;
+}
+.slide2 {
+    color: #A4A4A4;
+    top: 30%;
+    left: 45%;
+    transition-delay: 0s;
+}
+.slide2.show {
+    transition-delay: 2s;
+}
+.slide3 {
+    color: #595959;
+    top: 55%;
+    left: 75%;
+}
+
+
+.sliderp.show {
+    transform: translateX(0px);
+    transition: 1s;
+    opacity: 1;
+}

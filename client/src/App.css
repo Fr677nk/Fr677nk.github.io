@@ -4,6 +4,7 @@
   letter-spacing: .21rem;
   top: 0px;
   height: 9000px;
+  overflow-x: hidden;
 }
 
 .App-logo {

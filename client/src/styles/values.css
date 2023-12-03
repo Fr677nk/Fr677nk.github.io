@@ -1,0 +1,30 @@
+#valuescontainer {
+    height: 1130px;
+    display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   font-size: 36px;
+}
+
+#svgscontainer {
+    display: flex;
+    justify-content: center;
+}
+
+#svgscontainer > div {
+    margin: auto;
+}
+
+.vectorgraphic {
+    
+    color: black;
+    transform: scale(0, 0);
+    transition: 1s;
+    opacity: 0;
+}
+
+.vectorgraphic.show {
+    transform: scale(1, 1);
+    transition: 1s;
+    opacity: 1;
+}
