@@ -9,6 +9,7 @@
 #svgscontainer {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 #svgscontainer > div {
@@ -16,7 +17,7 @@
 }
 
 .vectorgraphic {
-    
+    width: 33%;
     color: black;
     transform: scale(0, 0);
     transition: 1s;
@@ -28,3 +29,4 @@
     transition: 1s;
     opacity: 1;
 }
+

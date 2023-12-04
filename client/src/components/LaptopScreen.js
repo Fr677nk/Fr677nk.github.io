@@ -3,7 +3,7 @@ import "../styles/laptopscreen.css";
 
 const LaptopScreen = () => {
   const [screenText, setScreenText] = useState("");
-  const message1 = "Hello, my name is frank. hellooooooo";
+  const message1 = "Hello, my name is frank.";
   useEffect(() => {
     let i = 0;
     let tempstring = "";
@@ -22,7 +22,7 @@ const LaptopScreen = () => {
         //   }, 2000);
         // }
       }
-    }, 150);
+    }, 100);
   }, []);
 
   useEffect(() => {}, [screenText]);
