@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import Blackbar from "./components/Blackbar";
 import Values from "./components/Values";
 import Projects from "./components/Projects";
-
+import Skills from "./components/Skills";
 
 function App() {
   return (
@@ -14,6 +14,7 @@ function App() {
       <Blackbar />
       <Values />
       <Projects />
+      <Skills />
     </div>
   );
 }

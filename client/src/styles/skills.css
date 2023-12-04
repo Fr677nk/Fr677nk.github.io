@@ -1,0 +1,52 @@
+#skillspanel {
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#skillspanel > p {
+  font-size: 64px;
+}
+
+#verticalseparator {
+  width: 100%;
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#languageiconscontainer {
+  width: 50%;
+  height: 100%;
+  border-right: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#languageicons {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#languageicons > img {
+  width: 100px;
+  padding: 10px;
+}
+#languageicons > svg {
+  width: 100px;
+  height: 100px;
+}
+
+#skillstext {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
