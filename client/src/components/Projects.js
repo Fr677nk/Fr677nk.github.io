@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { arrowLeft, arrowRight } from "../vectors/svgs";
 import bjpic from "../imgs/blackjack.jpg";
 import "../styles/projects.css";
@@ -11,8 +11,21 @@ const projects = [
   //   { name: "project5", link: null, img: null },
 ];
 
-const Projects = () => {
+const Projects = (props) => {
   const [currProj, setCurrProj] = useState(0);
+  const [isVisable, setIsVisable] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entry) => {
+        setIsVisable(entry[0].isIntersecting);
+      },
+      { rootMargin: "300px", threshold: 1 }
+    );
+    observer.observe(ref.current);
+  }, []);
+
   let prevproj;
   let nextproj;
   currProj == projects.length - 1 ? (nextproj = 0) : (nextproj = currProj + 1);
@@ -23,6 +36,14 @@ const Projects = () => {
       ? (prevproj = projects.length - 1)
       : (prevproj = currProj - 1);
   }, [currProj]);
+
+  useEffect(() => {
+    if (isVisable) {
+      props.setCurrPage();
+    } else {
+      
+    }
+  }, [isVisable]);
 
   let disablebtn = false;
   const handleRightBtn = () => {
@@ -74,16 +95,16 @@ const Projects = () => {
   ));
   return (
     <div id="projectscontainer">
-      <p>Projects ive worked on</p>
-      <div id="projects">
+      <p>Personal projects</p>
+      <div id="projects" ref={ref}>
         <button className="arrowbtn" id="leftbtn" onClick={handleLeftBtn}>
           {arrowLeft}
         </button>
         <div id="carouselcontainer">
           <div id="carouselleft2"></div>
-          <div id="carouselleft">{projectsList[prevproj]}</div>
+          <div id="carouselleft" onClick={handleLeftBtn}>{projectsList[prevproj]}</div>
           <div id="carouselmiddle">{projectsList[currProj]}</div>
-          <div id="carouselright">{projectsList[nextproj]}</div>
+          <div id="carouselright" onClick={handleRightBtn}>{projectsList[nextproj]}</div>
           <div id="carouselright2"></div>
         </div>
         <button className="arrowbtn" id="rightbtn" onClick={handleRightBtn}>

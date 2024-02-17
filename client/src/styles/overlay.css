@@ -1,0 +1,19 @@
+#overlay {
+    position: fixed;
+    top: 45%;
+    right: 20px;
+    height: 100px;
+    width: 30px;
+    float: right;
+    color: rgb(255, 0, 0);
+}
+.sidedot {
+ height: 15px;
+ width: 15px;
+ border-radius: 100px;
+ margin: 25px;
+}
+#overlay ul {
+    display: block;
+    list-style: circle;
+}

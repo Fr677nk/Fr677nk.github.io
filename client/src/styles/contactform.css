@@ -1,0 +1,68 @@
+#borderholder {
+    border-top: 1px solid black;
+    width: 80%;
+    
+    margin: auto;
+    margin-top: 100px;
+}
+#contactcontainer {
+  margin-top: 20px;
+  width: 100%;
+}
+#contactcontainer label {
+  padding-right: 10px;
+}
+#contactcontainer > p {
+  font-size: 32px;
+}
+#formtextinputs {
+  display: flex;
+  justify-content: center;
+}
+#formtextinputs input,
+#inqinput {
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 400px;
+}
+#formtextinput > div {
+  padding: 50px;
+}
+#nameemail {
+  margin: 40px;
+}
+#nameemail input {
+  height: 30px;
+  margin-bottom: 20px;
+}
+#inq {
+  margin: 40px;
+}
+#inq label {
+  top: 0;
+  float: left;
+}
+#inqinput {
+  height: 90px;
+  box-sizing: border-box;
+  resize: none;
+  padding: 10px;
+}
+
+#contactsubmit {
+  font-family: "Carrois Gothic SC", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.19rem;
+  height: 40px;
+  width: 200px;
+  background-color: #4f604e;
+  color: white;
+  margin-right: 20px;
+  border-radius: 10px;
+  border: none;
+}
+#contactsubmit:hover {
+  background-color: #7f967d;
+  color: black;
+  cursor: pointer;
+}

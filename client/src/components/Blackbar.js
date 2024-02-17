@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/blackbar.css";
 
-const Blackbar = () => {
+const Blackbar = (props) => {
   const [isVisable, setIsVisable] = useState(false);
 
   const ref = useRef(null);
@@ -9,6 +9,7 @@ const Blackbar = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(entry => {
         setIsVisable(entry[0].isIntersecting);
+        
     }, {rootMargin: "300px", threshold: 0.9});
     observer.observe(ref.current);
   }, []);
@@ -17,6 +18,7 @@ const Blackbar = () => {
     if(isVisable) {
         document.querySelectorAll(".sliderp").forEach(element => {
             element.classList.add("show");
+            props.setCurrPage();
         });
     } else {
         document.querySelectorAll(".sliderp").forEach(element => {

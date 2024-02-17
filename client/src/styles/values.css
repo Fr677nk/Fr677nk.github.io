@@ -16,6 +16,11 @@
     margin: auto;
 }
 
+#meline {
+    display: inline;
+    color: rgb(92, 124, 92);
+}
+
 .vectorgraphic {
     width: 33%;
     color: black;

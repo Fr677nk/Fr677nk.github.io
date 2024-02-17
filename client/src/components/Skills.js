@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useEffect, useRef, useState } from "react";
 import "../styles/skills.css";
 import jslogo from "../imgs/JavaScript-logo.png";
 import csslogo from "../imgs/csslogo.png";
@@ -10,9 +10,29 @@ import {
   cLogoVector,
 } from "../vectors/svgs";
 
-const Skills = () => {
+const Skills = (props) => {
+  const [isVisable, setIsVisable] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entry) => {
+        setIsVisable(entry[0].isIntersecting);
+      },
+      { rootMargin: "300px", threshold: 1 }
+    );
+    observer.observe(ref.current);
+  }, []);
+  useEffect(() => {
+    if (isVisable) {
+      props.setCurrPage();
+    } else {
+      
+    }
+  }, [isVisable]);
+
   return (
-    <div id="skillspanel">
+    <div id="skillspanel" >
       <p>Skills</p>
       <div id="verticalseparator">
         <div id="languageiconscontainer">
@@ -24,19 +44,22 @@ const Skills = () => {
             {cLogoVector}
           </div>
         </div>
-        <div id="skillstext">
-            <div>
-                <h2>adaptability</h2>
-                <p>sdsfsfdsfdsfsdfsdfsdfsdfsfsdfsdfdfs</p>
-            </div>
-            <div>
-                <h2>adaptability</h2>
-                <p>sdsfsfdsfdsfsdfsdfsdfsdfsfsdfsdfdfs</p>
-            </div>
-            <div>
-                <h2>adaptability</h2>
-                <p>sdsfsfdsfdsfsdfsdfsdfsdfsfsdfsdfdfs</p>
-            </div>
+        <div id="skillstext" ref={ref}>
+          <div>
+            <h2>adaptability</h2>
+            <p>In a world that is ever evolving, adaptability is key to staying on top. 
+            </p>
+          </div>
+          <div>
+            <h2>Problem solving</h2>
+            <p>The ability to tackle challenges head-on is one of the most useful skills in any environment.
+
+            </p>
+          </div>
+          <div>
+            <h2>Communication</h2>
+            <p>I seek to create connections with others, and to find synergy with the people that surround me.</p>
+          </div>
         </div>
       </div>
     </div>
