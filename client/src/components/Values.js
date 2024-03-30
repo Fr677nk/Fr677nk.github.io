@@ -6,7 +6,7 @@ import {
   innovationVector,
 } from "../vectors/svgs";
 
-const Values = (props) => {
+const Values = () => {
   const [isVisable, setIsVisable] = useState(false);
 
   const ref = useRef(null);
@@ -25,7 +25,6 @@ const Values = (props) => {
     if (isVisable) {
       document.querySelectorAll(".vectorgraphic").forEach((item) => {
         item.classList.add("show");
-        props.setCurrPage();
       });
     } else {
       document.querySelectorAll(".vectorgraphic").forEach((item) => {
@@ -35,7 +34,9 @@ const Values = (props) => {
   }, [isVisable]);
   return (
     <div id="valuescontainer">
-      <p>What development means to <p id="meline">me</p></p>
+      <p>
+        What development means to <p id="meline">me</p>
+      </p>
       <div id="svgscontainer" ref={ref}>
         <div id="passioncontainer" className="vectorgraphic">
           {passionVector}

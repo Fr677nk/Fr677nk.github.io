@@ -11,16 +11,32 @@ import ContactForm from "./components/ContactForm";
 
 function App() {
   const [currPage, setCurrPage] = useState(0);
+  useEffect(() => {
+    window.addEventListener("scroll", (event) => handleScroll(event), {
+      passive: true,
+    });
+    return window.removeEventListener("scroll", (event) => handleScroll(event));
+  }, []);
+
+  const handleScroll = (event) => {
+    let position = window.scrollY;
+    if (position < 600) setCurrPage(0);
+    if (position > 600 && position < 1100) setCurrPage(1);
+    if (position > 1100 && position < 2200) setCurrPage(2);
+    if (position > 2200 && position < 3200) setCurrPage(3);
+    if (position > 3200) setCurrPage(4);
+  };
+
   return (
     <div className="App">
       <Navbar />
       <Overlay currentPage={currPage} />
       <Landing />
-      <Blackbar setCurrPage={() => setCurrPage(0)} />
-      <Values setCurrPage={() => setCurrPage(1)} />
-      <Projects setCurrPage={() => setCurrPage(2)} />
-      <Skills setCurrPage={() => setCurrPage(3)} />
-      <ContactForm setCurrPage={() => setCurrPage(4)} />
+      <Blackbar />
+      <Values />
+      <Projects />
+      <Skills />
+      <ContactForm />
     </div>
   );
 }

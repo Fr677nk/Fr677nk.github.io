@@ -1,7 +1,7 @@
 import { React, useEffect, useRef, useState } from "react";
 import "../styles/contactform.css";
 
-const ContactForm = (props) => {
+const ContactForm = () => {
   const [isVisable, setIsVisable] = useState(false);
   const ref = useRef(null);
 
@@ -14,12 +14,6 @@ const ContactForm = (props) => {
     );
     observer.observe(ref.current);
   }, []);
-  useEffect(() => {
-    if (isVisable) {
-      props.setCurrPage();
-    } else {
-    }
-  }, [isVisable]);
 
   return (
     <div id="borderholder">
@@ -28,13 +22,13 @@ const ContactForm = (props) => {
         <form action="" ref={ref}>
           <div id="formtextinputs">
             <div id="nameemail">
-              <label for="nameinput">NAME:</label>
+              <label htmlFor="nameinput">NAME:</label>
               <input type="text" name="nameinput" required={true} /> <br />
-              <label for="emailinput">EMAIL:</label>
+              <label htmlFor="emailinput">EMAIL:</label>
               <input type="text" name="emailinput" required={true} />
             </div>
             <div id="inq">
-              <label for="inqinput">INQUISITION:</label>
+              <label htmlFor="inqinput">INQUISITION:</label>
               <textarea
                 name="inqinput"
                 id="inqinput"

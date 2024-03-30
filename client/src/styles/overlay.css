@@ -13,6 +13,12 @@
  border-radius: 100px;
  margin: 25px;
 }
+.sidedot:hover {
+    border: 2px solid rgb(143, 143, 143);
+    cursor: pointer;
+    height: 11px;
+ width: 11px;
+}
 #overlay ul {
     display: block;
     list-style: circle;

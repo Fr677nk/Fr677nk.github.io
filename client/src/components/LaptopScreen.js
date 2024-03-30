@@ -13,14 +13,6 @@ const LaptopScreen = () => {
         tempstring += message1.charAt(i);
         setScreenText(tempstring);
         i++;
-        // if (i == message1.length) {
-        //   paused = true;
-        //   setTimeout(() => {
-        //     i = 0;
-        //     tempstring = "";
-        //     paused = false;
-        //   }, 2000);
-        // }
       }
     }, 100);
   }, []);

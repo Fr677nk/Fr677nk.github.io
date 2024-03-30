@@ -10,7 +10,7 @@ import {
   cLogoVector,
 } from "../vectors/svgs";
 
-const Skills = (props) => {
+const Skills = () => {
   const [isVisable, setIsVisable] = useState(false);
   const ref = useRef(null);
 
@@ -23,13 +23,7 @@ const Skills = (props) => {
     );
     observer.observe(ref.current);
   }, []);
-  useEffect(() => {
-    if (isVisable) {
-      props.setCurrPage();
-    } else {
-      
-    }
-  }, [isVisable]);
+
 
   return (
     <div id="skillspanel" >

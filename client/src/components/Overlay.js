@@ -10,13 +10,13 @@ const Overlay = (props) => {
   dotsList = dotsList.map((item, i) => {
     if (i === props.currentPage) {
       return (
-        <div className="sidedot" style={{ backgroundColor: "black" }}>
+        <div key={"sidedot"+i} className="sidedot" style={{ backgroundColor: "black" } }>
           {item}
         </div>
       );
     } else {
       return (
-        <div className="sidedot" style={{ backgroundColor: "lightgrey" }}>
+        <div  key={"sidedot"+i}className="sidedot" style={{ backgroundColor: "lightgrey" }}>
           {item}
         </div>
       );

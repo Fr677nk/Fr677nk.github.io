@@ -11,7 +11,7 @@ const projects = [
   //   { name: "project5", link: null, img: null },
 ];
 
-const Projects = (props) => {
+const Projects = () => {
   const [currProj, setCurrProj] = useState(0);
   const [isVisable, setIsVisable] = useState(false);
   const ref = useRef(null);
@@ -36,14 +36,6 @@ const Projects = (props) => {
       ? (prevproj = projects.length - 1)
       : (prevproj = currProj - 1);
   }, [currProj]);
-
-  useEffect(() => {
-    if (isVisable) {
-      props.setCurrPage();
-    } else {
-      
-    }
-  }, [isVisable]);
 
   let disablebtn = false;
   const handleRightBtn = () => {

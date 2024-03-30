@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/blackbar.css";
 
-const Blackbar = (props) => {
+const Blackbar = () => {
   const [isVisable, setIsVisable] = useState(false);
 
   const ref = useRef(null);
@@ -18,7 +18,6 @@ const Blackbar = (props) => {
     if(isVisable) {
         document.querySelectorAll(".sliderp").forEach(element => {
             element.classList.add("show");
-            props.setCurrPage();
         });
     } else {
         document.querySelectorAll(".sliderp").forEach(element => {

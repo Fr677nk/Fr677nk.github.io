@@ -3,8 +3,12 @@
   font-family: 'Carrois Gothic SC', sans-serif;
   letter-spacing: .21rem;
   top: 0px;
-  height: 9000px;
+  height: auto;
   overflow-x: hidden;
+  
+}
+html {
+  scroll-behavior: smooth;
 }
 
 .App-logo {
