@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a04ed592.css",
-    "main.js": "/static/js/main.582b79ca.js",
+    "main.css": "/static/css/main.6ac5b24a.css",
+    "main.js": "/static/js/main.040f7b50.js",
     "static/media/blackjack.jpg": "/static/media/blackjack.647050de7b39c54cd6b7.jpg",
     "static/media/Laptop.png": "/static/media/Laptop.5d941ac7e89b2a884cbd.png",
     "static/media/fhlogogreen.png": "/static/media/fhlogogreen.2696dee04904b516000a.png",
@@ -9,11 +9,11 @@
     "static/media/DigitalNumbers-Regular.ttf": "/static/media/DigitalNumbers-Regular.cc3aac3fb51de512bd28.ttf",
     "static/media/JavaScript-logo.png": "/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
-    "main.a04ed592.css.map": "/static/css/main.a04ed592.css.map",
-    "main.582b79ca.js.map": "/static/js/main.582b79ca.js.map"
+    "main.6ac5b24a.css.map": "/static/css/main.6ac5b24a.css.map",
+    "main.040f7b50.js.map": "/static/js/main.040f7b50.js.map"
   },
   "entrypoints": [
-    "static/css/main.a04ed592.css",
-    "static/js/main.582b79ca.js"
+    "static/css/main.6ac5b24a.css",
+    "static/js/main.040f7b50.js"
   ]
 }
