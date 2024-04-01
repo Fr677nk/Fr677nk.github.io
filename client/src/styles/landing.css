@@ -20,6 +20,9 @@ img {
   top: -300px;
   transition: 0.5s;
 }
+#links a {
+  width: 50px;
+}
 .circleLink {
   width: 130px;
   height: 130px;

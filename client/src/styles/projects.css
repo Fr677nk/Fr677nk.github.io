@@ -39,6 +39,11 @@
   align-items: center;
 }
 
+#carouselcontainer div a{ 
+  text-decoration: none;
+  color: black;
+}
+
 #carouselleft2 {
   position: relative;
   left: 22%;
@@ -190,6 +195,7 @@
     height: 80%;
     width: 40%;
     transition: 1s;
+    cursor: pointer;
   }
 
   .projectlistitem {

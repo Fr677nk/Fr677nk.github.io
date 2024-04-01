@@ -4,7 +4,11 @@ import bjpic from "../imgs/blackjack.jpg";
 import "../styles/projects.css";
 
 const projects = [
-  { name: "project1", link: null, img: bjpic },
+  {
+    name: "project1",
+    link: "https://main.d1i6rlevjdnbbt.amplifyapp.com/",
+    img: bjpic,
+  },
   { name: "project2", link: null, img: bjpic },
   { name: "project3", link: null, img: bjpic },
   //   { name: "project4", link: null, img: null },
@@ -67,7 +71,9 @@ const Projects = () => {
       document.getElementById("carouselleft2").classList.add("slideright");
 
       setTimeout(() => {
-        document.getElementById("carouselmiddle").classList.remove("slideright");
+        document
+          .getElementById("carouselmiddle")
+          .classList.remove("slideright");
         document.getElementById("carouselright").classList.remove("slideright");
         document.getElementById("carouselleft").classList.remove("slideright");
         document.getElementById("carouselleft2").classList.remove("slideright");
@@ -94,9 +100,17 @@ const Projects = () => {
         </button>
         <div id="carouselcontainer">
           <div id="carouselleft2"></div>
-          <div id="carouselleft" onClick={handleLeftBtn}>{projectsList[prevproj]}</div>
-          <div id="carouselmiddle">{projectsList[currProj]}</div>
-          <div id="carouselright" onClick={handleRightBtn}>{projectsList[nextproj]}</div>
+          <div id="carouselleft" onClick={handleLeftBtn}>
+            {projectsList[prevproj]}
+          </div>
+
+          <div id="carouselmiddle">
+            <a href={projects[currProj].link}>{projectsList[currProj]}</a>
+          </div>
+
+          <div id="carouselright" onClick={handleRightBtn}>
+            {projectsList[nextproj]}
+          </div>
           <div id="carouselright2"></div>
         </div>
         <button className="arrowbtn" id="rightbtn" onClick={handleRightBtn}>

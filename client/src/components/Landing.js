@@ -7,8 +7,8 @@ const Landing = () => {
   return (
     <div id="landing">
       <LaptopScreen />
-      <div id="links">
-        <a href="https://github.com/Fr677nk">
+      <div id="links"style={{width: "0px"}}>
+        <a href="https://github.com/Fr677nk" >
           <div id="github" className="circleLink">
             {githubVector}
           </div>
@@ -17,9 +17,6 @@ const Landing = () => {
           <div
             id="linkedIn"
             className="circleLink"
-            onClick={() => {
-              window.location.assign("www.google.com");
-            }}
           >
             {linkedinVector}
           </div>

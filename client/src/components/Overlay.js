@@ -2,21 +2,37 @@ import React, { useEffect } from "react";
 import "../styles/overlay.css";
 
 const Overlay = (props) => {
-  //   useEffect(() => {
-  //     console.log(props.currentPage);
-  //   }, [props.currentPage]);
-
   let dotsList = ["", "", "", "", ""];
   dotsList = dotsList.map((item, i) => {
     if (i === props.currentPage) {
       return (
-        <div key={"sidedot"+i} className="sidedot" style={{ backgroundColor: "black" } }>
+        <div
+          key={"sidedot" + i}
+          className="sidedot"
+          style={{ backgroundColor: "black" }}
+          onClick={() => {
+            window.scrollTo(
+              0,
+              props.panelMarkers[i]
+            );
+          }}
+        >
           {item}
         </div>
       );
     } else {
       return (
-        <div  key={"sidedot"+i}className="sidedot" style={{ backgroundColor: "lightgrey" }}>
+        <div
+          key={"sidedot" + i}
+          className="sidedot"
+          style={{ backgroundColor: "lightgrey" }}
+          onClick={() => {
+            window.scrollTo(
+              0,
+              props.panelMarkers[i]
+            );
+          }}
+        >
           {item}
         </div>
       );
