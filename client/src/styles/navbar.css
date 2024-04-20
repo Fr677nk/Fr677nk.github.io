@@ -49,7 +49,7 @@ li {
   list-style: none;
   color: #9c9c9c;
 }
-nav a:hover {
+nav .navs:hover {
   color: white;
   cursor: pointer;
 }
