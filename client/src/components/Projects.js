@@ -1,16 +1,18 @@
 import React, { useEffect, useState, useRef } from "react";
 import { arrowLeft, arrowRight } from "../vectors/svgs";
 import bjpic from "../imgs/blackjack.jpg";
+import IYClogo from "../imgs/IYClogo.webp";
+import tictactoepic from "../imgs/tictactoe.jpg";
 import "../styles/projects.css";
 
 const projects = [
   {
-    name: "project1",
+    name: "BlackJack game",
     link: "https://main.d1i6rlevjdnbbt.amplifyapp.com/",
     img: bjpic,
   },
-  { name: "project2", link: null, img: bjpic },
-  { name: "project3", link: null, img: bjpic },
+  { name: "Impact york county dashboard", link: "http://67.197.180.80/", img: IYClogo },
+  { name: "TicTacToe game", link: "https://main.d2euxanuejnmck.amplifyapp.com/", img: tictactoepic },
   //   { name: "project4", link: null, img: null },
   //   { name: "project5", link: null, img: null },
 ];

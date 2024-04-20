@@ -8,12 +8,14 @@ import Skills from "./components/Skills";
 import Overlay from "./components/Overlay";
 import { useEffect, useState } from "react";
 import ContactForm from "./components/ContactForm";
+import { BottomBar } from "./components/BottomBar";
 
 const panelMarkers = [
   600,
   1100,
   2200,
-  3200
+  3200, 
+  3800
 ];
 
 function App() {
@@ -32,7 +34,8 @@ function App() {
     if (position > panelMarkers[0] && position < panelMarkers[1]) setCurrPage(1);
     if (position > panelMarkers[1] && position < panelMarkers[2]) setCurrPage(2);
     if (position > panelMarkers[2] && position < panelMarkers[3]) setCurrPage(3);
-    if (position > panelMarkers[3]) setCurrPage(4);
+    if (position > panelMarkers[3] && position < panelMarkers[4]) setCurrPage(4);
+    if (position > panelMarkers[4]) setCurrPage(5);
   };
 
   return (
@@ -45,6 +48,7 @@ function App() {
       <Projects />
       <Skills />
       <ContactForm />
+      <BottomBar />
     </div>
   );
 }

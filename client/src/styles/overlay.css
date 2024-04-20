@@ -6,6 +6,7 @@
     width: 30px;
     float: right;
     color: rgb(255, 0, 0);
+    z-index: 2;
 }
 .sidedot {
  height: 15px;

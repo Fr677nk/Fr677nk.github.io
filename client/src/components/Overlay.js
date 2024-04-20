@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import "../styles/overlay.css";
+const markers = [0,700,1500,2550,3500, 9999]
 
 const Overlay = (props) => {
-  let dotsList = ["", "", "", "", ""];
+  let dotsList = ["", "", "", "", "", ""];
   dotsList = dotsList.map((item, i) => {
     if (i === props.currentPage) {
       return (
@@ -13,8 +14,9 @@ const Overlay = (props) => {
           onClick={() => {
             window.scrollTo(
               0,
-              props.panelMarkers[i]
+              markers[i]
             );
+            
           }}
         >
           {item}
@@ -29,7 +31,7 @@ const Overlay = (props) => {
           onClick={() => {
             window.scrollTo(
               0,
-              props.panelMarkers[i]
+              markers[i]
             );
           }}
         >

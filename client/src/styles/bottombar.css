@@ -1,0 +1,18 @@
+#bottombar {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    margin-top: 40px;
+}
+#bottombar ul {
+    margin-bottom: 0px;
+    margin-top: 3px;
+    float: right;
+}
+#bottombar li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
