@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ac5b24a.css",
-    "main.js": "/static/js/main.040f7b50.js",
+    "main.css": "/static/css/main.5a5dbe22.css",
+    "main.js": "/static/js/main.ce79fb6b.js",
     "static/media/blackjack.jpg": "/static/media/blackjack.647050de7b39c54cd6b7.jpg",
     "static/media/Laptop.png": "/static/media/Laptop.5d941ac7e89b2a884cbd.png",
+    "static/media/tictactoe.jpg": "/static/media/tictactoe.92f877c33a39d425f44a.jpg",
     "static/media/fhlogogreen.png": "/static/media/fhlogogreen.2696dee04904b516000a.png",
     "static/media/csslogo.png": "/static/media/csslogo.ecba351cfceec5953d14.png",
     "static/media/DigitalNumbers-Regular.ttf": "/static/media/DigitalNumbers-Regular.cc3aac3fb51de512bd28.ttf",
+    "static/media/IYClogo.webp": "/static/media/IYClogo.3895812094df3c3e97ae.webp",
     "static/media/JavaScript-logo.png": "/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "index.html": "/index.html",
-    "main.6ac5b24a.css.map": "/static/css/main.6ac5b24a.css.map",
-    "main.040f7b50.js.map": "/static/js/main.040f7b50.js.map"
+    "main.5a5dbe22.css.map": "/static/css/main.5a5dbe22.css.map",
+    "main.ce79fb6b.js.map": "/static/js/main.ce79fb6b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ac5b24a.css",
-    "static/js/main.040f7b50.js"
+    "static/css/main.5a5dbe22.css",
+    "static/js/main.ce79fb6b.js"
   ]
 }
