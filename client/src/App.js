@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App" id="Appid">
       <Navbar />
-      <Overlay currentPage={currPage}  panelMarkers={panelMarkers}/>
+      <Overlay currentPage={currPage} />
       <Landing />
       <Blackbar />
       <Values />

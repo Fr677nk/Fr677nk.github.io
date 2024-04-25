@@ -1,5 +1,6 @@
 import { React, useEffect, useRef, useState } from "react";
 import "../styles/contactform.css";
+import { checkmarkVector } from "../vectors/svgs";
 import emailjs from "emailjs-com";
 
 const ContactForm = () => {
@@ -9,6 +10,7 @@ const ContactForm = () => {
     email: null,
     inq: null,
   });
+  const [submitButton, setSubmitButton] = useState("SUBMIT");
   const ref = useRef(null);
   console.log(process.env.SERVICE_ID);
   useEffect(() => {
@@ -29,16 +31,18 @@ const ContactForm = () => {
         "service_p27nful",
         "template_gokx9s8",
         e.target,
-        'L1IVY7EW2D0W_Ew6p'
+        "L1IVY7EW2D0W_Ew6p"
       )
       .then(
-        (result) => {
-          // window.location.reload() 
-        },
+        (result) => {},
         (error) => {
           console.log(error.text);
         }
       );
+    setSubmitButton(<>Sent{/*checkmarkVector */}</>);
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
   };
 
   const onChange = (e) =>
@@ -78,7 +82,7 @@ const ContactForm = () => {
             </div>
           </div>
           <button type="submit" id="contactsubmit">
-            SUBMIT
+            {submitButton}
           </button>
         </form>
       </div>

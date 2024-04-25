@@ -61,8 +61,11 @@
   border-radius: 10px;
   border: none;
 }
-#contactsubmit:hover {
+#contactsubmit:hover{
   background-color: #7f967d;
   color: black;
   cursor: pointer;
+}
+#contactsubmit svg {
+  padding-left: 10px;
 }

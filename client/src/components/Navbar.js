@@ -10,18 +10,24 @@ const Navbar = () => {
       </div>
       <ul>
         <li>
-          <a className="navs" href="#">Home</a>
+          <a className="navs" href="#">
+            Home
+          </a>
         </li>
         <li>
-          <a className="navs" href="#projects">Projects</a>
+          <a className="navs" href="#projects">
+            Projects
+          </a>
         </li>
         <li>
-          <a className="navs" href="#skillspanel">Qualifications</a>
+          <a className="navs" href="#skillspanel">
+            Qualifications
+          </a>
         </li>
       </ul>
-      <div id="contactlink">
-        <a href="#contactcontainer">Contact</a>
-      </div>
+      <a href="#contactcontainer">
+        <div id="contactlink">Contact</div>
+      </a>
     </nav>
   );
 };
