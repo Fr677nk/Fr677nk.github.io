@@ -13,7 +13,7 @@ const Landing = () => {
             {githubVector}
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/francis-joseph-houck-2805a9255/">
+        <a href="https://www.linkedin.com/in/frank-houck-2805a9255">
           <div
             id="linkedIn"
             className="circleLink"
